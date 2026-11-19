@@ -1,19 +1,65 @@
 @font-face {
-    font-family: 'Pricedown';
-    src: url('Pricedown Bl.otf') format('opentype');
-  }
-  
-  body {
-    font-family: 'Pricedown', sans-serif;
-  }
-  
-.card{
-    color: white;
+  font-family: 'Pricedown';
+  src: url('Pricedown Bl.otf') format('opentype');
 }
 
-.card p{
-font-size: 30px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pricedown', sans-serif;
 }
-.card strong{
-    font-size: 35px;
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images\ \(14\)\ \(1\).jfif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+header h1{
+  font-size: 60px;
+}
+
+a {
+  font-size: 28px;
+}
+
+.container-cards {
+  display: flex;        
+  flex-wrap: wrap;        
+  gap: 30px;            
+  padding: 30px;        
+  justify-content: flex-start;
+}
+
+.card {
+  width: 450px;    
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-sizing: border-box; 
+}
+
+.card img {
+  width: 100%;         
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.card strong {
+  font-size: 42px;
 }
